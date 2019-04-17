@@ -125,7 +125,7 @@ with WCAG 2.0 AA.
 **Certified By:** ACME Certification
 
 **Certifier Credential:**
-![](media/image1.png){width="0.5260422134733158in"
+![](./media/image1.png){width="0.5260422134733158in"
 height="0.5260422134733158in"}
 
 **All Accessibility Metadata:**
@@ -360,7 +360,7 @@ Or
 Book Features:
 
 ![Accessibility
-Information](media/image3.png){width="1.140625546806649in"
+Information](./media/image3.png){width="1.140625546806649in"
 height="1.140625546806649in"}*(clickable image to accessibility
 information below)*
 
@@ -723,7 +723,7 @@ https://3rd-party-certifier-credential.com\</meta\> *
 UI: Certifier Credential
 
 [![Certifier\'s Credential
-webpage](media/image1.png){width="0.5260422134733158in"
+webpage](./media/image1.png){width="0.5260422134733158in"
 height="0.5260422134733158in"}](https://bornaccessible.org/certification/gca-credential/)
 
 > *(Clickable Image to the URI of the certifiers credential's webpage
@@ -785,7 +785,7 @@ UI:
 Certifier Report
 
 ![Accessibility Certifier\'s
-Report](media/image2.png){width="0.6510422134733158in"
+Report](./media/image2.png){width="0.6510422134733158in"
 height="0.6510422134733158in"}
 
 > *(Clickable Image to the URI of the report from metadata)*
@@ -1365,7 +1365,7 @@ UI:
 Certifier Report
 
 ![Accessibility Certifier\'s
-Report](media/image2.png){width="0.6510422134733158in"
+Report](./media/image2.png){width="0.6510422134733158in"
 height="0.6510422134733158in"}
 
 > *(Clickable Image to the URI of the report from metadata)*
