@@ -67,10 +67,10 @@ with WCAG 2.0 AA.
 > **Certified By:** ACME Certification
 
 > **Certifier Credential:**
-![](./media/image1.png "ACME Inc. credential webpage")
+![ACME Inc. credential webpage](./media/image1.png)
 
 > **All Accessibility Metadata:**
-![](./media/image5.png "Toggle box with all accessibility information")
+![Toggle box with all accessibility information](./media/image5.png)
 
 ## Discovering Accessible Content
 
@@ -264,8 +264,7 @@ Or
  
 > Book Features:
 > 
-> ![Accessibility
-> Information](./media/image3.png "Accessibility Information")
+> ![Accessibility Information](./media/image3.png)
 > 
 > *(clickable image to accessibility information below)*
 > 
@@ -721,7 +720,7 @@ Certifier Credential: XYZ Certified Accessible
 
 Certifier Credential
 
-[![Certifier's Credential webpage](./media/image1.png "ACME Inc. credential webpage")](https://3rd-party-certifier-credential.com)
+[![ACME Inc. credential webpage](./media/image1.png)](https://3rd-party-certifier-credential.com)
 
 > *(Clickable Image to the URI of the certifiers credential's webpage from metadata)*
 > 
@@ -782,7 +781,7 @@ Metadata](#_va7c6kcyo7mr), described below.
 
 Certifier Report
 
-[![Accessibility Certifier's Report](./media/image2.png "ACME Inc. Report webpage")](http://www.example.com/a11y/report/9780000000001)
+[![ACME Inc. Report webpage](./media/image2.png)](http://www.example.com/a11y/report/9780000000001)
 
 > *(Clickable Image to the URI of the report from metadata)*
 >
@@ -1359,7 +1358,7 @@ The value can be retrieve using XPath:
 
 Certifier Report
 
-![Accessibility Certifier's Report](./media/image2.png "Report webpage")
+![Report webpage](./media/image2.png)
 
 > *(Clickable Image to the URI of the report from metadata)*
 >
