@@ -263,7 +263,7 @@ Or
  
 > Book Features:
 > 
-> ![Accessibility Information](./media/image3.png)
+> <img src="./media/image3.png" alt="Accessibility Information" width="75"/>
 > 
 > *(clickable image to accessibility information below)*
 > 
