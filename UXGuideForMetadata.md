@@ -297,7 +297,7 @@ Or
 
 8.  [Hazards](#hazards)
 
-9.  [Comprehensive Accessibility Metadata](#_va7c6kcyo7mr)
+9.  [All Accessibility Metadata](#all-accessibility-metadata)
 
 This metadata as outlined in the [1.0 Accessibility Specification Conformance and Discoverability](http://www.idpf.org/epub/a11y/) can be found inside the EPUB's opf file usually found in `OEBPS/package.opf`
 
@@ -536,6 +536,7 @@ publication are well-described in conformance with WCAG 2.0 A.
 
 "Accessibility Summary: None provided"
 
+
 ### EPUB Accessibility Conformance
 
 **Value**: Textual Link based on Metadata (WCAG-A, WCAG-AA, WCAG-AAA) or raw URL found in EPUB OPF file's metadata field
@@ -575,7 +576,7 @@ with human-readable text for WCAG-AA, etc.
 
 **Note**: If you do not wish to have clickable links here, you may omit them
 as long as you make the links available in the section [All
-Accessibility Metadata](#_va7c6kcyo7mr), described below.
+Accessibility Metadata](#all-accessibility-metadata), described below.
 
 **Note**: The above three URIs could change in the future since they point
 to an IDPF page; the IDPF no longer exists as an independent
