@@ -1098,7 +1098,7 @@ None provided
 ## ONIX Metadata
 
 
-```callout {type: 'info', title: '**Note**:'}
+<p class="callout info">**Note**:
 ONIX does not have an exact 1:1 mapping with EPUB accessibility
 metadata so unfortunately not all of the accessibility metadata found in
 an EPUB exists in ONIX at the time of this publication. There are plans
@@ -1111,7 +1111,7 @@ number of new accessibility metadata codes added to ONIX 3 to support
 the Accessibility 1.0 specification. Which means that ONIX 2 has a
 limited number of accessibility metadata codes and is something not
 covered in this document.
-```
+</p>
 
 ### ONIX feed examples
 
