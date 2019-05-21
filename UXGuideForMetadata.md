@@ -67,10 +67,10 @@ with WCAG 2.0 AA.
 > **Certified By:** ACME Certification
 
 > **Certifier Credential:**
-[ACME Inc. credential webpage](./media/image1.png =100x100)
+![ACME Inc. credential webpage](./media/image1.png)
 
 > **All Accessibility Metadata:**
-[Toggle box with all accessibility information](./media/image5.png)
+![Toggle box with all accessibility information](./media/image5.png)
 
 ## Discovering Accessible Content
 
