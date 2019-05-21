@@ -28,7 +28,7 @@
 	* [Certifier Credential](#certifier-credential-1)
 	* [Certifier Report](#certifier-report-1)
 	* [Hazards](#hazards-1)
-- [All Accessibility Metadata](#all-accessibility-metadata-1)
+- [All Accessibility Metadata](#all-accessibility-metadata-onix)
 
 ---
 
@@ -698,7 +698,7 @@ credential webpage.
 
 If you do not wish to have clickable links here, you may omit them as
 long as you make the links available in the section [All Accessibility
-Metadata](#_va7c6kcyo7mr), described below.
+Metadata](#all-accessibility-metadata), described below.
 
 If you are aware of a list of organizations who offer third-party
 certification, a short list of certifier's logos could be cached and
@@ -776,7 +776,7 @@ accessibility report.
 
 If you do not wish to have clickable links here, you may omit them as
 long as you make the links available in the section [All Accessibility
-Metadata](#_va7c6kcyo7mr), described below.
+Metadata](#all-accessibility-metadata), described below.
 
 #### Example 7.1 (URL)
 
@@ -967,7 +967,7 @@ present.
 
 ---
 
-## All Accessibility Metadata
+## <a name="all-accessibility-metadata)">All Accessibility Metadata</a>
 
 **Value**: Link to complete list of all metadata fields
 
@@ -1389,6 +1389,6 @@ Certifier Report: *Accessibility Report*
 
 Not available in ONIX
 
-## All Accessibility Metadata
+## <a name="all-accessibility-metadata-onix)">All Accessibility Metadata</a>
 
 For a complete list of [ONIX accessibility metadata refer to the crosswalk](http://www.a11ymetadata.org/the-specification/metadata-crosswalk/).
