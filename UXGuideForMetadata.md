@@ -225,8 +225,6 @@ been added so far: `accessibilityFeature`, `accessibilityHazard`,
 </script>
 ```
 
-##### Test
-
 Once the metadata is implemented, it is important to check its validity and make sure that it is interpreted correctly by search engines; this
 is possible with a free tool provided by Google: the [Structured Data
 Testing
