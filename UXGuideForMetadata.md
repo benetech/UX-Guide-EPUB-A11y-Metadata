@@ -719,7 +719,7 @@ Certifier Credential: XYZ Certified Accessible
 
 Certifier Credential
 
-[![ACME Inc. credential webpage](./media/image1.png)](https://3rd-party-certifier-credential.com)
+> [<img src="./media/image1.png" alt="ACME Inc. credential webpage" width="50"/>](https://3rd-party-certifier-credential.com)
 
 > *(Clickable Image to the URI of the certifiers credential's webpage from metadata)*
 > 
