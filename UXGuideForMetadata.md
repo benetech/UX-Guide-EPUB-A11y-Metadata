@@ -1357,7 +1357,7 @@ The value can be retrieve using XPath:
 
 Certifier Report
 
-![Report webpage](./media/image2.png)
+[<img src="./media/image2.png" alt="Report webpage" width="50"/>](http://www.example.com/a11y/report/9780000000001)
 
 > *(Clickable Image to the URI of the report from metadata)*
 >
