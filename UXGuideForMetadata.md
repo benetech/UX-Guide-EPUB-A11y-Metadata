@@ -965,7 +965,9 @@ hazard metadata therefore for the missing metadata case we need to
 inform the user we don't know about any hazards which may or maynot be
 present.
 
-### All Accessibility Metadata
+---
+
+## All Accessibility Metadata
 
 **Value**: Link to complete list of all metadata fields
 
