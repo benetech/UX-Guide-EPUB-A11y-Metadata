@@ -1097,8 +1097,7 @@ None provided
 
 ## ONIX Metadata
 
-
-<p class="callout info">**Note**:
+<p style="color: blue;">**Note** 
 ONIX does not have an exact 1:1 mapping with EPUB accessibility
 metadata so unfortunately not all of the accessibility metadata found in
 an EPUB exists in ONIX at the time of this publication. There are plans
