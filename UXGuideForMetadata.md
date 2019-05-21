@@ -301,15 +301,11 @@ Or
 
 This metadata as outlined in the [1.0 Accessibility Specification Conformance and Discoverability](http://www.idpf.org/epub/a11y/) can be found inside the EPUB's opf file usually found in `OEBPS/package.opf`
 
----
-
-**Note**: At the end of this document are the [ONIX equivalent
+> **Note**: At the end of this document are the [ONIX equivalent
 metadata](#onix-metadata) for each of these, if defined.
 While the examples shown here are for EPUB 3.x, there are equivalents
 for EPUB 2.x which can be found in the [Accessibility 1.0 specification](http://www.idpf.org/epub/a11y/).
 
-
----
 
 ### Screen Reader Friendly
 
@@ -330,13 +326,10 @@ requires both visual and textual abilities to access the data, not
 textual alone. Only having `accessModeSufficient` be "***textual***"
 as a separate entry ensures the document is screen reader friendly.
 
----
-
-**Note**: As long as there is an entry that reads `<meta
+> **Note**: As long as there is an entry that reads `<meta
 property="schema:accessModeSufficient">textual</meta>` the book
 can claim *"Screen Reader Friendly: Yes"*.
 
----
 
 There may also be other `accessModeSufficient` entries with combinations
 of access modes such as "textual, visual" which indicate other ways to
@@ -425,12 +418,8 @@ both visual and auditory abilities to access the data, not auditory
 alone. Only having `accessModeSufficient` be "**auditory**" as a
 separate entry ensures the document is an audiobook.
 
----
-
-**Note**: As long as you find `<meta property="schema:accessModeSufficient">auditory</meta>` the
+>**Note**: As long as you find `<meta property="schema:accessModeSufficient">auditory</meta>` the
 book can claim "**Audiobook: Yes**".
-
----
 
 There may also be other `accessModeSufficient` entries with combinations
 of access modes such as "textual, visual" which indicate other ways to
@@ -495,18 +484,14 @@ OPF file:
 <meta property="schema:accessibilitySummary">
 ```
 
----
-
-**Note**: We will be creating additional guidance for publishers on how to
+>**Note**: We will be creating additional guidance for publishers on how to
 best write these summaries.
 
-**Note**: If the metadata does not exist this should say "No Summary
+>**Note**: If the metadata does not exist this should say "No Summary
 Available"
 
-**Note**: This data could be in a language other than English but would be
+>**Note**: This data could be in a language other than English but would be
 tagged as such.
-
----
 
 #### Example 3.1 (metadata present)
 
@@ -545,45 +530,37 @@ publication are well-described in conformance with WCAG 2.0 A.
 <link rel="dcterms:conformsTo">
 ```
 
----
-
-**Note**: Interpret this metadata to be as human friendly as possible. So if
+>**Note**: Interpret this metadata to be as human friendly as possible. So if
 the URI is:
 
-- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"
+>- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"
 report it as "[**WCAG-A**](http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a)"
 which links to this URL.
 
-- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"
+>- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"
 report it as "[**WCAG-AA**](http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa)"
 which links to this URL.
 
-- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aaa"
+>- "http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aaa"
 report it as "[**WCAG-AAA**](http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a)"
 which links to this URL.
-
----
 
 If the URL is anything other than the three listed above, then providing
 the raw URL which is also a link is the only option, since this may be a
 link to a different conformance standard (i.e. some audio conformance
 specification for an audio book).
 
----
-
-**Note**: A case insensitive comparison should be done to replace the URI
+>**Note**: A case insensitive comparison should be done to replace the URI
 with human-readable text for WCAG-AA, etc.
 
-**Note**: If you do not wish to have clickable links here, you may omit them
+>**Note**: If you do not wish to have clickable links here, you may omit them
 as long as you make the links available in the section [All
 Accessibility Metadata](#all-accessibility-metadata), described below.
 
-**Note**: The above three URIs could change in the future since they point
+>**Note**: The above three URIs could change in the future since they point
 to an IDPF page; the IDPF no longer exists as an independent
 organization, and this work has been moved to the W3C. If a change
 occurs, other URIs will be recommended.
-
----
 
 #### Example 4.1 (metadata present)
 
@@ -635,11 +612,7 @@ OPF file:
 <meta property="a11y:certifiedBy">
 ```
 
----
-
-**Note**: If the metadata does not exist this should say "None provided"
-
----
+>**Note**: If the metadata does not exist this should say "None provided"
 
 #### Example 5.1 (metadata present 3rd party)
 
@@ -685,13 +658,9 @@ OPF file:
 
 <meta property="a11y:certifierCredential">
 
----
-
-**Note**: This metadata could be a simple text string in which case you
+>**Note**: This metadata could be a simple text string in which case you
 would just display it, or it could be a URI to the certifier's
 credential web page.
-
----
 
 If the metadata value is a URI, you could have some standard
 certification logo which would be clickable and link to the certifier's
@@ -739,11 +708,7 @@ Certifier Credential
 > 
 > *(Image here of a checkmark inside a shield is just for reference feel free to choose your own image)*
 
----
-
-**Note**: There may be an image that is associated with specific Certifier Credential image (ie. Mark/Stamp/Seal) which could be used here. If you would like to display this image, or any other, you would need to be coordinate this out of band with the certifier agency as it is not part of the metadata delivered with the book.
-
----
+>**Note**: There may be an image that is associated with specific Certifier Credential image (ie. Mark/Stamp/Seal) which could be used here. If you would like to display this image, or any other, you would need to be coordinate this out of band with the certifier agency as it is not part of the metadata delivered with the book.
 
 **Or**
 
@@ -840,15 +805,11 @@ is also the metadata value "*none*", which covers all three categories
 and corresponds to "*noFlashingHazard*", "*noSoundHazard*" and
 "*noMotionSimulationHazard*".
 
----
-
-**Note**: In the section "[All Accessibility
+>**Note**: In the section "[All Accessibility
 Metadata](#all-accessibility-metadata)" Hazards will be
 displayed exactly how the publisher provided them so simplifying here
 with using "none" can be an option instead of saying explicitly "no
 Sound, no Flashing, no Motion Simulation"
-
----
 
 #### Example 8.1 (metadata present flashing)
 
@@ -1097,7 +1058,7 @@ None provided
 
 ## ONIX Metadata
 
-> **Note** 
+> **Note**:  
 > ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfortunately not all of the accessibility metadata found in an EPUB exists in ONIX at the time of this publication. There are plans
 to add this metadata to future versions of ONIX but no time frame has been announced. This [EPUB to ONIX crosswalk](http://www.a11ymetadata.org/the-specification/metadata-crosswalk/) outlines the current overlap in metadata which will get updated as these two specifications evolve. It is important to note that there were a number of new accessibility metadata codes added to ONIX 3 to support the Accessibility 1.0 specification. Which means that ONIX 2 has a limited number of accessibility metadata codes and is something not
 covered in this document.
