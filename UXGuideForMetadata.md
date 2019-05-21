@@ -28,7 +28,7 @@
 	* [Certifier Credential](#certifier-credential-1)
 	* [Certifier Report](#certifier-report-1)
 	* [Hazards](#hazards-1)
-- [All Accessibility Metadata](#all-accessibility-metadata-onix)
+- [All Accessibility Metadata](#all-accessibility-metadata-1)
 
 ---
 
@@ -1092,9 +1092,10 @@ None provided
 
 None provided
 
+---
+
 ## ONIX Metadata
 
----
 
 **Note**: ONIX does not have an exact 1:1 mapping with EPUB accessibility
 metadata so unfortunately not all of the accessibility metadata found in
@@ -1389,6 +1390,6 @@ Certifier Report: *Accessibility Report*
 
 Not available in ONIX
 
-## <a name="all-accessibility-metadata-onix)">All Accessibility Metadata</a>
+## <a name="all-accessibility-metadata-1)">All Accessibility Metadata</a>
 
 For a complete list of [ONIX accessibility metadata refer to the crosswalk](http://www.a11ymetadata.org/the-specification/metadata-crosswalk/).
