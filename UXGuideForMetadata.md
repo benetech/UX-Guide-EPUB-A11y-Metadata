@@ -780,7 +780,7 @@ Metadata](#_va7c6kcyo7mr), described below.
 
 Certifier Report
 
-[![ACME Inc. Report webpage](./media/image2.png)](http://www.example.com/a11y/report/9780000000001)
+[<img src="./media/image2.png" alt="ACME Inc. Report webpage" width="50"/>](http://www.example.com/a11y/report/9780000000001)
 
 > *(Clickable Image to the URI of the report from metadata)*
 >
