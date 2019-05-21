@@ -30,6 +30,8 @@
 	* [Hazards](#hazards-1)
 - [All Accessibility Metadata](#all-accessibility-metadata-1)
 
+---
+
 ## General Overview
 This document will help those who wish to provide accessibility metadata directly to users understand how to represent machine readable
 accessibility metadata in a user friendly User Interface / User
@@ -73,6 +75,8 @@ with WCAG 2.0 AA.
 
 > <img src="./media/image5.png" alt="Toggle box with all accessibility information" width="300"/>
 
+---
+
 ## Discovering Accessible Content
 
 The guidelines for presentation of accessibility metadata in this
@@ -113,7 +117,9 @@ other hazard-related conditions. But if a single additional search
 filter fits best in a site's UI, a tool for finding accessible materials
 that declare conformance to WCAG 2.0 is the most likely choice.
 
-### Exposing EPUB Accessibility Metadata to Search Engines
+---
+
+## Exposing EPUB Accessibility Metadata to Search Engines
 
 If an ebook catalogue is publicly available, metadata related to the
 accessibility of the contents can be displayed to search engine
@@ -124,7 +130,7 @@ from machine to machine; this operation improves the Search Engine
 Optimization of the entire website as it allows the search engine to get
 a clear idea of the contents presented (and their level of accessibility).
 
-#### Implementation
+### Implementation
 
 From a technical point of view, this type of metadata can be presented
 in a machine-readable form using the Schema.org standard. Schema.org
@@ -180,7 +186,7 @@ been added so far: `accessibilityFeature`, `accessibilityHazard`,
 `accessMode`, `accessModeSufficient`, `accessibilitySummary`,
 `accessibilityControl`, and `accessibilityAPI`.
 
-##### Example
+#### Example
 ```json
 <script type="application/ld+json">
 	{
@@ -235,6 +241,8 @@ After processing the data, the tool shows on the left side of the screen
 the code of the web page (or snippet) and on the right side the data
 interpreted by Google.
 
+---
+
 ## UI Technical Details
 
 When you have accessibility metadata about an EPUB it is important to
@@ -269,6 +277,8 @@ Or
 > 
 > *Suggested Alt-text for image "Accessibility Information"*
 
+---
+
 ## Order of Key Information
 
 1.  [Screen Reader Friendly](#screen-reader-friendly)
@@ -297,6 +307,7 @@ This metadata as outlined in the [1.0 Accessibility Specification Conformance an
 metadata](#onix-metadata) for each of these, if defined.
 While the examples shown here are for EPUB 3.x, there are equivalents
 for EPUB 2.x which can be found in the [Accessibility 1.0 specification](http://www.idpf.org/epub/a11y/).
+
 
 ---
 
