@@ -1,5 +1,7 @@
 # User Experience Guide for Displaying Accessibility metadata for EPUB
 
+## Version 0.9 (05/22/2019)
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -1345,3 +1347,16 @@ Not available in ONIX
 ### <a name="all-accessibility-metadata-1)">All Accessibility Metadata</a>
 
 For a complete list of [ONIX accessibility metadata refer to the crosswalk](http://www.a11ymetadata.org/the-specification/metadata-crosswalk/).
+
+---
+---
+## Editors
+* Charles LaPierre
+* Gregorio Pellegrino
+* Madeleine Rothberg
+
+## Contributors
+* Avneesh Singh
+* George Kerscher
+* Jason White
+* Rick Johnson
