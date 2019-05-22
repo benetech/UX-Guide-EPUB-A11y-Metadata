@@ -38,7 +38,7 @@ Comments regarding this document are welcome. Please [file an issue using our Gi
 	* [Certifier Report](#certifier-report-1)
 	* [Hazards](#hazards-1)
     * [All Accessibility Metadata](#all-accessibility-metadata-1)
-- * [Acknowledgements](#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
