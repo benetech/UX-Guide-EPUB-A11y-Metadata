@@ -1,4 +1,6 @@
-# User Experience Guide for Displaying Accessibility metadata for EPUB
+---
+title: User Experience Guide for Displaying Accessibility metadata for EPUB
+...
 
 ## Status of This Document
 Editors Draft - Version 0.9 (05/22/2019)
