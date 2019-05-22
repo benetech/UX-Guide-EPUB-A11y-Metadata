@@ -1,9 +1,16 @@
 # User Experience Guide for Displaying Accessibility metadata for EPUB
 
-## Version 0.9 (05/22/2019)
+## Status of This Document
+Editors Draft - Version 0.9 (05/22/2019)
+
+This document was published by the DIAGRAM Center Standards Working Group and DAISY's Transition to EPUB Working group  as an Editor's Draft.
+
+Comments regarding this document are welcome. Please [file an issue using our GitHub repository issue tracker](https://github.com/benetech/UX-Guide-EPUB-A11y-Metadata/issues).
+
+---
 
 ## Table of Contents
-
+- [Status of This Document](#status-of-this-document)
 - [Table of Contents](#table-of-contents)
 - [General Overview](#general-overview)
 - [Discovering Accessible Content](#discovering-accessible-content)
@@ -31,6 +38,7 @@
 	* [Certifier Report](#certifier-report-1)
 	* [Hazards](#hazards-1)
     * [All Accessibility Metadata](#all-accessibility-metadata-1)
+- * [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -1350,13 +1358,22 @@ For a complete list of [ONIX accessibility metadata refer to the crosswalk](http
 
 ---
 ---
-## Editors
+## Acknowledgements
+
+### Editors
 * Charles LaPierre
 * Gregorio Pellegrino
 
-## Contributors
+### Contributors
 * Avneesh Singh
+* Dave Cramer
 * George Kerscher
 * Jason White
 * Madeleine Rothberg
+* Rachel Comerford
 * Rick Johnson
+
+### Reviewers
+* Erin Kirchner-Lucas
+
+
