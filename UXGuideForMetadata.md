@@ -1353,10 +1353,10 @@ For a complete list of [ONIX accessibility metadata refer to the crosswalk](http
 ## Editors
 * Charles LaPierre
 * Gregorio Pellegrino
-* Madeleine Rothberg
 
 ## Contributors
 * Avneesh Singh
 * George Kerscher
 * Jason White
+* Madeleine Rothberg
 * Rick Johnson
