@@ -426,7 +426,7 @@ If this metadata exists (ie. "**auditory**" within `accessModeSufficient` by its
 
 **Important**: This is not the same as "**textual**, **auditory**" or
 "**auditory**, **textual**" as this indicates that the book requires
-both visual and auditory abilities to access the data, not auditory
+both textual and auditory abilities to access the data, not auditory
 alone. Only having `accessModeSufficient` be "**auditory**" as a
 separate entry ensures the document is an audiobook.
 
