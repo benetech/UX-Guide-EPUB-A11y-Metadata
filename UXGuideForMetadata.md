@@ -430,7 +430,7 @@ both textual and auditory abilities to access the data, not auditory
 alone. Only having `accessModeSufficient` be "**auditory**" as a
 separate entry ensures the document is an audiobook.
 
->**Note**: As long as you find `<meta property="schema:accessModeSufficient">auditory</meta>` the
+>**Note**: As long as you find ```xml <meta property="schema:accessModeSufficient">auditory</meta>``` the
 book can claim "**Audiobook: Yes**".
 
 There may also be other `accessModeSufficient` entries with combinations
