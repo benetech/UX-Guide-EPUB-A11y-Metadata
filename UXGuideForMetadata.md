@@ -960,9 +960,9 @@ conformance metadata listed above.
 ##### Metadata
 
 ```xhtml
-<meta property="schema:accessibilityFeature>alternativeText</meta>
-<meta property="schema:accessibilityFeature>longDescription</meta>
-<meta property="schema:accessibilityFeature>printPageNumbers</meta>
+<meta property="schema:accessibilityFeature">alternativeText</meta>
+<meta property="schema:accessibilityFeature">longDescription</meta>
+<meta property="schema:accessibilityFeature">printPageNumbers</meta>
 <meta property="schema:accessibilityHazards">noSoundHazard</meta>
 <meta property="schema:accessibilityHazards">noMotionSimulationHazard</meta>
 <meta property="schema:accessibilityHazards">noFlashingHazard</meta>
