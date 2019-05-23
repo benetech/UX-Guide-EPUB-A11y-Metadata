@@ -325,7 +325,7 @@ for EPUB 2.x which can be found in the [Accessibility 1.0 specification](http://
 
 This data is derived from the EPUB package metadata inside the OPF file:
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">textual</meta>
 ```
 
@@ -357,7 +357,7 @@ When there is no `accessModeSufficient` metadata present, report
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">visual</meta>
 ```
 
@@ -371,7 +371,7 @@ When there is no `accessModeSufficient` metadata present, report
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">visual</meta>
 <meta property="schema:accessModeSufficient">textual</meta>
 <meta property="schema:accessModeSufficient">textual, visual</meta>
@@ -387,7 +387,7 @@ When there is no `accessModeSufficient` metadata present, report
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">visual</meta>
 <meta property="schema:accessModeSufficient">textual, visual</meta>
 ```
@@ -418,7 +418,7 @@ When there is no `accessModeSufficient` metadata present, report
 
 This data is derived from the EPUB package metadata inside the OPF file:
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">auditory</meta>
 ```
 
@@ -445,7 +445,7 @@ books are not audiobooks. Simply omit this section.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">auditory</meta>
 <meta property="schema:accessModeSufficient">visual</meta>
 ```
@@ -460,7 +460,7 @@ books are not audiobooks. Simply omit this section.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessModeSufficient">visual</meta>
 <meta property="schema:accessModeSufficient">auditory, visual</meta>
 ```
@@ -492,7 +492,7 @@ present at all in the metadata)
 This data is pulled directly from the EPUB package metadata inside the
 OPF file:
 
-```
+```xhtml
 <meta property="schema:accessibilitySummary">
 ```
 
@@ -509,7 +509,7 @@ tagged as such.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilitySummary">
 	This publication includes markup to enable accessibility and compatibility with assistive technology. Images, audio, and video in the publication are well-described in conformance with WCAG 2.0 AA. Structural navigation may be inconsistent.
 </meta>
@@ -538,7 +538,7 @@ publication are well-described in conformance with WCAG 2.0 A.
 
 **Value**: Textual Link based on Metadata (WCAG-A, WCAG-AA, WCAG-AAA) or raw URL found in EPUB OPF file's metadata field
 
-```
+```xhtml
 <link rel="dcterms:conformsTo">
 ```
 
@@ -578,7 +578,7 @@ occurs, other URIs will be recommended.
 
 ##### Metadata
 
-```
+```xhtml
 <link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" />
 ```
 
@@ -593,7 +593,7 @@ EPUB Accessibility Conformance:
 
 ##### Metadata
 
-```
+```xhtml
 <link rel="dcterms:conformsTo" href="http://www.daisy.org/guidelines/epub/navigable-audio-only-epub3-guidelines" />
 ```
 
@@ -620,7 +620,7 @@ EPUB Accessibility Conformance: None provided
 This data is pulled directly from the EPUB package metadata inside the
 OPF file:
 
-```
+```xhtml
 <meta property="a11y:certifiedBy">
 ```
 
@@ -630,7 +630,7 @@ OPF file:
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="a11y:certifiedBy">3rd Party Company Name</meta>
 ```
 
@@ -642,7 +642,7 @@ Certified By: 3rd Party Company Name
 
 ##### Metadata
 
-```
+```xhtml
 <dc:publisher>Publisher Name</dc:publisher>
 <meta property="a11y:certifiedBy">Publisher Name</meta>
 ```
@@ -667,8 +667,9 @@ Self Certified By: Publisher Name
 
 This data is pulled directly from the EPUB package metadata inside the
 OPF file:
-
+```xhtml
 <meta property="a11y:certifierCredential">
+```
 
 >**Note**: This metadata could be a simple text string in which case you
 would just display it, or it could be a URI to the certifier's
@@ -690,7 +691,7 @@ displayed when appropriate. For example:
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="a11y:certifierCredential">XYZ Certified
 Accessible</meta>
 ```
@@ -703,7 +704,7 @@ Certifier Credential: XYZ Certified Accessible
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="a11y:certifiedBy">ACME Inc.</meta>
 <meta property="a11y:certifierCredential">https://3rd-party-certifier-credential.com</meta>
 ```
@@ -745,7 +746,7 @@ Certifier's Credential: [ACME Inc. credential webpage](https://3rd-party-certifi
 This data is pulled directly from the EPUB package metadata inside the
 OPF file:
 
-```
+```xhtml
 <link rel="a11y:certifierReport" href="http://www.example.com/a11y/report/9780000000001"/>
 ```
 
@@ -760,7 +761,7 @@ Metadata](#all-accessibility-metadata), described below.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="a11y:certifiedBy">ACME Inc.</meta>
 <link rel="a11y:certifierReport" href="http://www.example.com/a11y/report/9780000000001"/>
 ```
@@ -804,7 +805,7 @@ simulation, no sound, none, or Unknown.
 
 This data is found in the EPUB package metadata inside the OPF file:
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">none</meta>
 ```
 
@@ -827,7 +828,7 @@ Sound, no Flashing, no Motion Simulation"
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">flashing</meta>
 ```
 
@@ -841,7 +842,7 @@ Sound, no Flashing, no Motion Simulation"
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">motionSimulation</meta>
 ```
 
@@ -855,7 +856,7 @@ Sound, no Flashing, no Motion Simulation"
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">sound</meta>
 ```
 
@@ -869,7 +870,7 @@ Sound, no Flashing, no Motion Simulation"
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">sound</meta>
 <meta property="schema:accessibilityHazard">motionSimulation</meta>
 <meta property="schema:accessibilityHazard">flashing</meta>
@@ -886,7 +887,7 @@ Sound, no Flashing, no Motion Simulation"
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">none</meta>
 ```
 
@@ -906,7 +907,7 @@ No" for every EPUB.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
 <meta property="schema:accessibilityHazard">noSoundHazard</meta>
 <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
@@ -958,19 +959,19 @@ conformance metadata listed above.
 
 ##### Metadata
 
-```
+```xhtml
 <meta property="schema:accessibilityFeature>alternativeText</meta>
-<meta property="schema:accessibilityFeature>longDescription</meta>*
-<meta property="schema:accessibilityFeature>printPageNumbers</meta>*
-<meta property="schema:accessibilityHazards">noSoundHazard</meta>*
-<meta property="schema:accessibilityHazards">noMotionSimulationHazard</meta>*
-<meta property="schema:accessibilityHazards">noFlashingHazard</meta>*
-<meta property="schema:accessMode">visual</meta>*
-<meta property="schema:accessMode">textual</meta>*
-<meta property="schema:accessModeSufficient">visual</meta>*
-<meta property="schema:accessModeSufficient">textual</meta>*
-<meta property="schema:accessModeSufficient">visual,textual</meta>*
-<meta property="a11y:certifiedBy">ACME Certification</meta>*
+<meta property="schema:accessibilityFeature>longDescription</meta>
+<meta property="schema:accessibilityFeature>printPageNumbers</meta>
+<meta property="schema:accessibilityHazards">noSoundHazard</meta>
+<meta property="schema:accessibilityHazards">noMotionSimulationHazard</meta>
+<meta property="schema:accessibilityHazards">noFlashingHazard</meta>
+<meta property="schema:accessMode">visual</meta>
+<meta property="schema:accessMode">textual</meta>
+<meta property="schema:accessModeSufficient">visual</meta>
+<meta property="schema:accessModeSufficient">textual</meta>
+<meta property="schema:accessModeSufficient">visual,textual</meta>
+<meta property="a11y:certifiedBy">ACME Certification</meta>
 <meta property="a11y:certifierCredential">https://ACME-Certification.org/</meta>
 <link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a/" />
 <meta property="schema:accessibilitySummary">
@@ -1082,7 +1083,7 @@ covered in this document.
 
 Here is an example of an ONIX feed (version 3.0), which will be used as a reference point for the following examples on EPUB accessibility metadata: the results of the XPath shown are based on this example.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ONIXMessage xmlns="http://ns.editeur.org/onix/3.0/reference" release="3.0">
 	<Header>...</Header>
@@ -1158,7 +1159,7 @@ Here is an example of an ONIX feed (version 3.0), which will be used as a refere
 
 #### ONIX feed describing an Audiobook Here is an example of an ONIX feed (version 3.0) for describing an audiobook.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ONIXMessage xmlns="http://ns.editeur.org/onix/3.0/reference" release="3.0">
 	<Header>...</Header>
@@ -1205,7 +1206,7 @@ ProductFormFeatureValue element.
 An excerpt of ONIX indicating an
 inaccessible product is:
 
-```
+```xml
 <ProductFormFeature>
 	<ProductFormFeatureType>09</ProductFormFeatureType>
 	<ProductFormFeatureValue>09</ProductFormFeatureValue>
@@ -1230,7 +1231,7 @@ This information can be retrieved from ONIX [code list 81](https://ns.editeur.or
 
 This field is true if the XPath returns at least one element for:
 
-```
+```xml
 //Product/DescriptiveDetail/PrimaryContentType[text()="01"] or
 //Product/DescriptiveDetail/ProductContentType[text()="01"]
 ```
@@ -1251,7 +1252,7 @@ Accessibility Summary.
 
 The value can be retrieved using XPath:
 
-```
+```xml
 //Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType="09" and ProductFormFeatureValue="00"]/ProductFormFeatureDescription/text()
 ```
 
@@ -1275,7 +1276,7 @@ publication are well-described in conformance with WCAG 2.0 A.
 
 If the following XPath returns at least one result:
 
-```
+```xml
 //Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType="09"
 and ProductFormFeatureValue="02"]
 ```
@@ -1290,7 +1291,7 @@ and ProductFormFeatureValue="02"]
 
 If the following XPath returns at least one result:
 
-```
+```xml
 //Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType="09"
 and ProductFormFeatureValue="03"] returns at least one result
 ```
@@ -1323,11 +1324,11 @@ for detailed accessibility information
 
 The value can be retrieve using XPath:
 
-```
+```xml
 //Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType="09" and ProductFormFeatureValue="94"]/ProductFormFeatureDescription/text()
 ```
 
-```
+```xml
 //Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType="09" and ProductFormFeatureValue="96"]/ProductFormFeatureDescription/text()
 ```
 
