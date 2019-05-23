@@ -3,7 +3,7 @@ title: User Experience Guide for Displaying Accessibility metadata for EPUB
 ...
 
 ## Status of This Document
-Editors Draft - Version 0.9 (05/22/2019)
+Editors Draft - Version 0.9 (05/23/2019)
 
 This document was published by the DIAGRAM Center Standards Working Group and DAISY's Transition to EPUB Working group  as an Editor's Draft.
 
