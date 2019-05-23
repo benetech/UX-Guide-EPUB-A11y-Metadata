@@ -1359,8 +1359,8 @@ Not available in ONIX
 
 For a complete list of [ONIX accessibility metadata refer to the crosswalk](http://www.a11ymetadata.org/the-specification/metadata-crosswalk/).
 
----
----
+-----
+-----
 ## Acknowledgements
 
 ### Editors
