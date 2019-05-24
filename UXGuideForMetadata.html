@@ -10,6 +10,7 @@
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
+      q { quotes: "“" "”" "‘" "’"; }
   </style>
   <style>
 a.sourceLine { display: inline-block; line-height: 1.25; }
@@ -129,7 +130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 id="general-overview">General Overview</h2>
 <p>This document will help those who wish to provide accessibility metadata directly to users understand how to represent machine readable accessibility metadata in a user friendly User Interface / User Experience (UI/UX).</p>
 <p>Metadata found either inside an EPUB or in its corresponding ONIX file may have important accessibility information that will help end users find and determine if this EPUB can meet their specific accessibility needs.</p>
-<p>Most metadata is meant to be machine readable so that it can be used to aid in user search queries such as “Find all EPUB books that contain large print, or braille, or that has met a certain level of accessibility conformance.” The exception to this is the accessibility summary which, if present, describes in human-readable text all the accessibility features and any shortcomings present in this book that can be directly presented to the end user.</p>
+<p>Most metadata is meant to be machine readable so that it can be used to aid in user search queries such as <q>Find all EPUB books that contain large print, or braille, or that has met a certain level of accessibility conformance.</q> The exception to this is the accessibility summary which, if present, describes in human-readable text all the accessibility features and any shortcomings present in this book that can be directly presented to the end user.</p>
 <p><strong>NOTE: All images provided here may be protected under copyright and are only used as a reference.</strong></p>
 <p>Here is an example of what a user-friendly accessibility metadata web page could look like:</p>
 <blockquote>
@@ -156,9 +157,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 <h2 id="discovering-accessible-content">Discovering Accessible Content</h2>
 <p>The guidelines for presentation of accessibility metadata in this document are intended to improve the user experience when readers browse the catalog entry for a book. However, accessibility metadata also has a vital role to play in helping readers discover books that are accessible for them. Book providers, vendors, and libraries are encouraged to create searching and filtering tools that interpret accessibility metadata to aid in discovery; a full discussion of this topic is out of scope for this document, but these brief notes may be helpful until further research and development leads to more specific guidance.</p>
-<p>While every user has different accessibility needs, meeting the Web Content Accessibility Guidelines (WCAG) 2.0 requirements, even at level A, is a baseline that ensures a book will be widely accessible. Book providers may therefore wish to create specific search capabilities to permit users to find books that have declared conformance to WCAG at any level. A search filter called “Accessible” that retrieves all books with metadata of <code>&lt;link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a" /&gt;</code> or the equivalent for wcag-aa and ultimately for wcag-aaa would fill this need.</p>
-<p>Audiobooks created for mainstream use provide important access for many users with disabilities even though they are not accessible to others. Book providers may already have search tools aimed at finding audiobooks, since they are popular and fairly common, but if not, this would be a good addition to the suite of tools for finding accessible books. Note that audiobooks may not pass WCAG requirements because they are targeted at a specific audience rather than broadly accessible and so would not be found using the “Accessible” search suggested above.</p>
-<p>Any of the metadata fields discussed in detail below could also be used as a filter; a “Screen-reader accessible” search would be valued by screen reader users, and a way to ensure no books with hazards are downloaded would be valued by those with light-sensitive epilepsy or other hazard-related conditions. But if a single additional search filter fits best in a site’s UI, a tool for finding accessible materials that declare conformance to WCAG 2.0 is the most likely choice.</p>
+<p>While every user has different accessibility needs, meeting the Web Content Accessibility Guidelines (WCAG) 2.0 requirements, even at level A, is a baseline that ensures a book will be widely accessible. Book providers may therefore wish to create specific search capabilities to permit users to find books that have declared conformance to WCAG at any level. A search filter called <q>Accessible</q> that retrieves all books with metadata of <code>&lt;link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a" /&gt;</code> or the equivalent for wcag-aa and ultimately for wcag-aaa would fill this need.</p>
+<p>Audiobooks created for mainstream use provide important access for many users with disabilities even though they are not accessible to others. Book providers may already have search tools aimed at finding audiobooks, since they are popular and fairly common, but if not, this would be a good addition to the suite of tools for finding accessible books. Note that audiobooks may not pass WCAG requirements because they are targeted at a specific audience rather than broadly accessible and so would not be found using the <q>Accessible</q> search suggested above.</p>
+<p>Any of the metadata fields discussed in detail below could also be used as a filter; a <q>Screen-reader accessible</q> search would be valued by screen reader users, and a way to ensure no books with hazards are downloaded would be valued by those with light-sensitive epilepsy or other hazard-related conditions. But if a single additional search filter fits best in a site’s UI, a tool for finding accessible materials that declare conformance to WCAG 2.0 is the most likely choice.</p>
 <hr />
 <h2 id="exposing-epub-accessibility-metadata-to-search-engines">Exposing EPUB Accessibility Metadata to Search Engines</h2>
 <p>If an ebook catalogue is publicly available, metadata related to the accessibility of the contents can be displayed to search engine crawlers. This type of metadata for search engines is not available to users, but can be easily interpreted by machines (browsers, spiders, crawlers, etc.) so that accessibility information is correctly passed from machine to machine; this operation improves the Search Engine Optimization of the entire website as it allows the search engine to get a clear idea of the contents presented (and their level of accessibility).</p>
@@ -226,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Once the metadata is implemented, it is important to check its validity and make sure that it is interpreted correctly by search engines; this is possible with a free tool provided by Google: the <a href="https://search.google.com/structured-data/testing-tool/u/0/">Structured Data Testing Tool</a>. Through the graphical interface you can enter the URL of a web page to be analyzed or a snippet of code with the metadata you want to check. After processing the data, the tool shows on the left side of the screen the code of the web page (or snippet) and on the right side the data interpreted by Google.</p>
 <hr />
 <h2 id="ui-technical-details">UI Technical Details</h2>
-<p>When you have accessibility metadata about an EPUB it is important to share this information with the user in a user friendly way. At a very high level when displaying information about an EPUB you may just want to acknowledge that there is “Accessibility Features” or “Accessibility Information” available and if the user would like to get at this information they can click a link or an image which will then provide the information that is discussed below.</p>
+<p>When you have accessibility metadata about an EPUB it is important to share this information with the user in a user friendly way. At a very high level when displaying information about an EPUB you may just want to acknowledge that there is <q>Accessibility Features</q> or <q>Accessibility Information</q> available and if the user would like to get at this information they can click a link or an image which will then provide the information that is discussed below.</p>
 <p>For Example:</p>
 <blockquote>
 <p>Title: Huckleberry Finn</p>
@@ -241,7 +242,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Book Features:</p>
 <p><img src="./media/image3.png" alt="Accessibility Information" width="75"/></p>
 <p><em>(clickable image to accessibility information below)</em></p>
-<p><em>Suggested Alt-text for image “Accessibility Information”</em></p>
+<p><em>Suggested Alt-text for image <q>Accessibility Information</q></em></p>
 </blockquote>
 <hr />
 <h2 id="order-of-key-information">Order of Key Information</h2>
@@ -264,19 +265,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Value</strong>: <em>Yes</em> / <em>No</em> / <em>Unknown</em></p>
 <p>This data is derived from the EPUB package metadata inside the OPF file:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>textual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
-<p>If this metadata exists (ie. “<strong>textual</strong>” within <code>accessModeSufficient</code> by itself) then report <em>“Screen Reader Friendly: Yes”</em></p>
-<p><strong>Important</strong>: This is not the same as “<strong>visual</strong>, <strong>textual</strong>” or “<strong>textual, visual</strong>” because the combination means that the book requires both visual and textual abilities to access the data, not textual alone. Only having <code>accessModeSufficient</code> be “<strong><em>textual</em></strong>” as a separate entry ensures the document is screen reader friendly.</p>
+<p>If this metadata exists (ie. <q><strong>textual</strong></q> within <code>accessModeSufficient</code> by itself) then report <em><q>Screen Reader Friendly: Yes</q></em></p>
+<p><strong>Important</strong>: This is not the same as <q><strong>visual</strong>, <strong>textual</strong></q> or <q><strong>textual, visual</strong></q> because the combination means that the book requires both visual and textual abilities to access the data, not textual alone. Only having <code>accessModeSufficient</code> be <q><strong><em>textual</em></strong></q> as a separate entry ensures the document is screen reader friendly.</p>
 <blockquote>
-<p><strong>Note</strong>: As long as there is an entry that reads <code>&lt;meta property="schema:accessModeSufficient"&gt;textual&lt;/meta&gt;</code> the book can claim <em>“Screen Reader Friendly: Yes”</em>.</p>
+<p><strong>Note</strong>: As long as there is an entry that reads <code>&lt;meta property="schema:accessModeSufficient"&gt;textual&lt;/meta&gt;</code> the book can claim <em><q>Screen Reader Friendly: Yes</q></em>.</p>
 </blockquote>
-<p>There may also be other <code>accessModeSufficient</code> entries with combinations of access modes such as “textual, visual” which indicate other ways to read the book.</p>
-<p>When <code>accessModeSufficient</code> exists but does not have “textual” by itself, report <em>“Screen Reader Friendly: No”</em>.</p>
-<p>When there is no <code>accessModeSufficient</code> metadata present, report <em>“Screen Reader Friendly: unknown or not provided”</em>.</p>
+<p>There may also be other <code>accessModeSufficient</code> entries with combinations of access modes such as <q>textual, visual</q> which indicate other ways to read the book.</p>
+<p>When <code>accessModeSufficient</code> exists but does not have <q>textual</q> by itself, report <em><q>Screen Reader Friendly: No</q></em>.</p>
+<p>When there is no <code>accessModeSufficient</code> metadata present, report <em><q>Screen Reader Friendly: unknown or not provided</q></em>.</p>
 <h4 id="example-1.1-metadata-present">Example 1.1 (metadata present)</h4>
 <h5 id="metadata">Metadata</h5>
 <div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>visual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui">UI</h5>
-<p>“Screen Reader Friendly: Yes”</p>
+<p><q>Screen Reader Friendly: Yes</q></p>
 <p>(because <strong><em>textual</em></strong> was present by itself in <code>accessModeSufficient</code>)</p>
 <h4 id="example-1.2-multiple-metadata-accessmodesufficient-fields-present">Example 1.2 (multiple metadata <code>accessModeSufficient</code> fields present)</h4>
 <h5 id="metadata-1">Metadata</h5>
@@ -284,47 +285,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>textual<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>textual, visual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-1">UI</h5>
-<p>“Screen Reader Friendly: Yes”</p>
+<p><q>Screen Reader Friendly: Yes</q></p>
 <p>(because <strong><em>textual</em></strong> was present by itself in <code>accessModeSufficient</code>)</p>
 <h4 id="example-1.3-metadata-present-but-not-screen-reader-friendly">Example 1.3 (metadata present but not Screen Reader Friendly)</h4>
 <h5 id="metadata-2">Metadata</h5>
 <div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>visual<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>textual, visual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-2">UI</h5>
-<p>“Screen Reader Friendly: No”</p>
+<p><q>Screen Reader Friendly: No</q></p>
 <p>(because <strong><em>textual</em></strong> was not present by itself in <code>accessModeSufficient</code>)</p>
 <h4 id="example-1.4-metadata-missing">Example 1.4 (metadata missing)</h4>
 <h5 id="metadata-3">Metadata</h5>
 <p>""</p>
 <h5 id="ui-3">UI</h5>
-<p>“Screen Reader Friendly: Unknown”</p>
+<p><q>Screen Reader Friendly: Unknown</q></p>
 <p>(because <code>accessModeSufficient</code> is not found at all in the metadata)</p>
 <!-- QUI -->
 <h3 id="audiobook">Audiobook</h3>
 <p><strong>Values</strong>: <em>Yes / (if No - Omit this section)</em></p>
 <p>This data is derived from the EPUB package metadata inside the OPF file:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>auditory<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
-<p>If this metadata exists (ie. “<strong>auditory</strong>” within <code>accessModeSufficient</code> by itself) then report <em>“Audiobook: Yes”.</em></p>
-<p><strong>Important</strong>: This is not the same as “<strong>textual</strong>, <strong>auditory</strong>” or “<strong>auditory</strong>, <strong>textual</strong>” as this indicates that the book requires both textual and auditory abilities to access the data, not auditory alone. Only having <code>accessModeSufficient</code> be “<strong>auditory</strong>” as a separate entry ensures the document is an audiobook.</p>
+<p>If this metadata exists (ie. <q><strong>auditory</strong></q> within <code>accessModeSufficient</code> by itself) then report <em><q>Audiobook: Yes</q>.</em></p>
+<p><strong>Important</strong>: This is not the same as <q><strong>textual</strong>, <strong>auditory</strong></q> or <q><strong>auditory</strong>, <strong>textual</strong></q> as this indicates that the book requires both textual and auditory abilities to access the data, not auditory alone. Only having <code>accessModeSufficient</code> be <q><strong>auditory</strong></q> as a separate entry ensures the document is an audiobook.</p>
 <blockquote>
-<p><strong>Note</strong>: As long as you find <code>&lt;meta property="schema:accessModeSufficient"&gt;auditory&lt;/meta&gt;</code> the book can claim “<strong>Audiobook: Yes</strong>”.</p>
+<p><strong>Note</strong>: As long as you find <code>&lt;meta property="schema:accessModeSufficient"&gt;auditory&lt;/meta&gt;</code> the book can claim <q><strong>Audiobook: Yes</strong></q>.</p>
 </blockquote>
-<p>There may also be other <code>accessModeSufficient</code> entries with combinations of access modes such as “textual, visual” which indicate other ways to read the book.</p>
+<p>There may also be other <code>accessModeSufficient</code> entries with combinations of access modes such as <q>textual, visual</q> which indicate other ways to read the book.</p>
 <p>Note: If you can not report that this is an audiobook then do not present any information to the user for this category, since 99% of EPUB books are not audiobooks. Simply omit this section.</p>
 <h4 id="example-2.1-metadata-present-auditory">Example 2.1 (metadata present auditory)</h4>
 <h5 id="metadata-4">Metadata</h5>
 <div class="sourceCode" id="cb7"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>auditory<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb7-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>visual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-4">UI</h5>
-<p>“Audiobook: Yes”</p>
-<p>(because “<strong>auditory</strong>” was found alone in <code>accessModeSufficient</code>)</p>
+<p><q>Audiobook: Yes</q></p>
+<p>(because <q><strong>auditory</strong></q> was found alone in <code>accessModeSufficient</code>)</p>
 <h4 id="example-2.2-metadata-present-but-not-an-audiobook">Example 2.2 (metadata present but not an Audiobook)</h4>
 <h5 id="metadata-5">Metadata</h5>
 <div class="sourceCode" id="cb8"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>visual<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessModeSufficient&quot;</span><span class="kw">&gt;</span>auditory, visual<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-5">UI</h5>
 <p>Omit this section</p>
-<p>(Nothing presented to the user because “<strong>auditory</strong>” was not found alone in <code>accessModeSufficient</code>)</p>
+<p>(Nothing presented to the user because <q><strong>auditory</strong></q> was not found alone in <code>accessModeSufficient</code>)</p>
 <h4 id="example-2.3-metadata-not-present">Example 2.3 (metadata not present)</h4>
 <h5 id="metadata-6">Metadata</h5>
 <p>""</p>
@@ -339,7 +340,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Note</strong>: We will be creating additional guidance for publishers on how to best write these summaries.</p>
 </blockquote>
 <blockquote>
-<p><strong>Note</strong>: If the metadata does not exist this should say “No Summary Available”</p>
+<p><strong>Note</strong>: If the metadata does not exist this should say <q>No Summary Available</q></p>
 </blockquote>
 <blockquote>
 <p><strong>Note</strong>: This data could be in a language other than English but would be tagged as such.</p>
@@ -356,7 +357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h5 id="metadata-8">Metadata</h5>
 <p>""</p>
 <h5 id="ui-8">UI</h5>
-<p>“Accessibility Summary: None provided”</p>
+<p><q>Accessibility Summary: None provided</q></p>
 <h3 id="epub-accessibility-conformance">EPUB Accessibility Conformance</h3>
 <p><strong>Value</strong>: Textual Link based on Metadata (WCAG-A, WCAG-AA, WCAG-AAA) or raw URL found in EPUB OPF file’s metadata field</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;dcterms:conformsTo&quot;</span><span class="kw">&gt;</span></a></code></pre></div>
@@ -365,17 +366,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </blockquote>
 <blockquote>
 <ul>
-<li>“http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a” report it as “<a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"><strong>WCAG-A</strong></a>” which links to this URL.</li>
+<li><q>http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a</q> report it as <q><a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"><strong>WCAG-A</strong></a></q> which links to this URL.</li>
 </ul>
 </blockquote>
 <blockquote>
 <ul>
-<li>“http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa” report it as “<a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"><strong>WCAG-AA</strong></a>” which links to this URL.</li>
+<li><q>http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa</q> report it as <q><a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"><strong>WCAG-AA</strong></a></q> which links to this URL.</li>
 </ul>
 </blockquote>
 <blockquote>
 <ul>
-<li>“http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aaa” report it as “<a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"><strong>WCAG-AAA</strong></a>” which links to this URL.</li>
+<li><q>http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aaa</q> report it as <q><a href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-a"><strong>WCAG-AAA</strong></a></q> which links to this URL.</li>
 </ul>
 </blockquote>
 <p>If the URL is anything other than the three listed above, then providing the raw URL which is also a link is the only option, since this may be a link to a different conformance standard (i.e. some audio conformance specification for an audio book).</p>
@@ -398,7 +399,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h5 id="metadata-10">Metadata</h5>
 <div class="sourceCode" id="cb13"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;dcterms:conformsTo&quot;</span><span class="ot"> href=</span><span class="st">&quot;http://www.daisy.org/guidelines/epub/navigable-audio-only-epub3-guidelines&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
 <h5 id="ui-10">UI</h5>
-<p>“EPUB Accessibility Conformance: Custom specification”</p>
+<p><q>EPUB Accessibility Conformance: Custom specification</q></p>
 <p>(Because this URI is different than what was outlined above. The book may qualify for conformance as an optimized publication.)</p>
 <h4 id="example-4.3-metadata-missing">Example 4.3 (metadata missing)</h4>
 <h5 id="metadata-11">Metadata</h5>
@@ -410,7 +411,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>This data is pulled directly from the EPUB package metadata inside the OPF file:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;a11y:certifiedBy&quot;</span><span class="kw">&gt;</span></a></code></pre></div>
 <blockquote>
-<p><strong>Note</strong>: If the metadata does not exist this should say “None provided”</p>
+<p><strong>Note</strong>: If the metadata does not exist this should say <q>None provided</q></p>
 </blockquote>
 <h4 id="example-5.1-metadata-present-3rd-party">Example 5.1 (metadata present 3rd party)</h4>
 <h5 id="metadata-12">Metadata</h5>
@@ -427,7 +428,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h5 id="metadata-14">Metadata</h5>
 <p>""</p>
 <h5 id="ui-14">UI</h5>
-<p>“Certified By: None provided”</p>
+<p><q>Certified By: None provided</q></p>
 <h3 id="certifier-credential">Certifier Credential</h3>
 <p><strong>Value</strong>: Potentially linked textual data from metadata</p>
 <p>This data is pulled directly from the EPUB package metadata inside the OPF file:</p>
@@ -455,7 +456,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </blockquote>
 <blockquote>
 <p><em>(Clickable Image to the URI of the certifiers credential’s webpage from metadata)</em></p>
-<p><em>alt-text “ACME Inc. credential webpage”</em></p>
+<p><em>alt-text <q>ACME Inc. credential webpage</q></em></p>
 <p><em>(Image here of a checkmark inside a shield is just for reference feel free to choose your own image)</em></p>
 </blockquote>
 <blockquote>
@@ -470,7 +471,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h5 id="metadata-18">Metadata</h5>
 <p>""</p>
 <h5 id="ui-16">UI</h5>
-<p>“Certifier Credential: None provided”</p>
+<p><q>Certifier Credential: None provided</q></p>
 <h3 id="certifier-report">Certifier Report</h3>
 <p><strong>Value</strong>: Potentially linked textual data from metadata</p>
 <p>This data is pulled directly from the EPUB package metadata inside the OPF file:</p>
@@ -486,7 +487,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><a href="http://www.example.com/a11y/report/9780000000001"><img src="./media/image2.png" alt="ACME Inc. Report webpage" width="50"/></a></p>
 <blockquote>
 <p><em>(Clickable Image to the URI of the report from metadata)</em></p>
-<p><em>alt-text “ACME Inc. Report webpage”</em></p>
+<p><em>alt-text <q>ACME Inc. Report webpage</q></em></p>
 <p><em>(Image here of checkmark with clipboard is just for reference feel free to choose your own image)</em></p>
 </blockquote>
 <p><strong>Or</strong></p>
@@ -504,44 +505,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Values</strong>: flashing, motion simulation, sound, no flashing, no motion simulation, no sound, none, or Unknown.</p>
 <p>This data is found in the EPUB package metadata inside the OPF file:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>none<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
-<p>Hazards are the only metadata which can be expressed as either positive or negative statements, so metadata authors can confirm either the presence of the hazard, such as “<em>flashing</em>”, or the absence of the hazard, “<em>noFlashingHazard</em>” and similarly for “<em>sound</em> / <em>noSoundHazard</em>” and “<em>motion</em> / <em>noMotionSimulationHazard</em>”. There is also the metadata value “<em>none</em>”, which covers all three categories and corresponds to “<em>noFlashingHazard</em>”, “<em>noSoundHazard</em>” and “<em>noMotionSimulationHazard</em>”.</p>
+<p>Hazards are the only metadata which can be expressed as either positive or negative statements, so metadata authors can confirm either the presence of the hazard, such as <q><em>flashing</em></q>, or the absence of the hazard, <q><em>noFlashingHazard</em></q> and similarly for <q><em>sound</em> / <em>noSoundHazard</em></q> and <q><em>motion</em> / <em>noMotionSimulationHazard</em></q>. There is also the metadata value <q><em>none</em></q>, which covers all three categories and corresponds to <q><em>noFlashingHazard</em></q>, <q><em>noSoundHazard</em></q> and <q><em>noMotionSimulationHazard</em></q>.</p>
 <blockquote>
-<p><strong>Note</strong>: In the section “<a href="#all-accessibility-metadata">All Accessibility Metadata</a>” Hazards will be displayed exactly how the publisher provided them so simplifying here with using “none” can be an option instead of saying explicitly “no Sound, no Flashing, no Motion Simulation”</p>
+<p><strong>Note</strong>: In the section <q><a href="#all-accessibility-metadata">All Accessibility Metadata</a></q> Hazards will be displayed exactly how the publisher provided them so simplifying here with using <q>none</q> can be an option instead of saying explicitly <q>no Sound, no Flashing, no Motion Simulation</q></p>
 </blockquote>
 <h4 id="example-8.1-metadata-present-flashing">Example 8.1 (metadata present flashing)</h4>
 <h5 id="metadata-21">Metadata</h5>
 <div class="sourceCode" id="cb23"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>flashing<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-19">UI</h5>
-<p>“Hazard: Flashing”</p>
-<p>(because “<strong><em>flashing</em></strong>” was found in <code>accessibilityHazard</code>)</p>
+<p><q>Hazard: Flashing</q></p>
+<p>(because <q><strong><em>flashing</em></strong></q> was found in <code>accessibilityHazard</code>)</p>
 <h4 id="example-8.2-metadata-present-motionsimulation">Example 8.2 (metadata present motionSimulation)</h4>
 <h5 id="metadata-22">Metadata</h5>
 <div class="sourceCode" id="cb24"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>motionSimulation<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-20">UI</h5>
-<p>“Hazard: Motion Simulation”</p>
-<p>(because “<strong><em>motionSimulation</em></strong>” was found in <code>accessibilityHazard</code>)</p>
+<p><q>Hazard: Motion Simulation</q></p>
+<p>(because <q><strong><em>motionSimulation</em></strong></q> was found in <code>accessibilityHazard</code>)</p>
 <h4 id="example-8.3-metadata-present-sound">Example 8.3 (metadata present sound)</h4>
 <h5 id="metadata-23">Metadata</h5>
 <div class="sourceCode" id="cb25"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>sound<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-21">UI</h5>
-<p>“Hazard: Sound”</p>
-<p>(because “<strong><em>sound</em></strong>” was found in <code>accessibilityHazard</code>)</p>
+<p><q>Hazard: Sound</q></p>
+<p>(because <q><strong><em>sound</em></strong></q> was found in <code>accessibilityHazard</code>)</p>
 <h4 id="example-8.4-multiple-hazards-present">Example 8.4 (multiple hazards present)</h4>
 <h5 id="metadata-24">Metadata</h5>
 <div class="sourceCode" id="cb26"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>sound<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb26-2" title="2"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>motionSimulation<span class="kw">&lt;/meta&gt;</span></a>
 <a class="sourceLine" id="cb26-3" title="3"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>flashing<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-22">UI</h5>
-<p>“Hazard: Sound, Motion Simulation, and Flashing”</p>
-<p>(because “<strong><em>sound</em></strong>”, “<strong><em>motionSimulation</em></strong>” , “<strong><em>flashing</em></strong>” and were all found in <code>accessibilityHazard</code>)</p>
+<p><q>Hazard: Sound, Motion Simulation, and Flashing</q></p>
+<p>(because <q><strong><em>sound</em></strong></q>, <q><strong><em>motionSimulation</em></strong></q> , <q><strong><em>flashing</em></strong></q> and were all found in <code>accessibilityHazard</code>)</p>
 <h4 id="example-8.5-metadata-present-none">Example 8.5 (metadata present none)</h4>
 <h5 id="metadata-25">Metadata</h5>
 <div class="sourceCode" id="cb27"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>none<span class="kw">&lt;/meta&gt;</span></a></code></pre></div>
 <h5 id="ui-23">UI</h5>
 <p>Omit this section</p>
 <p><strong>Or</strong></p>
-<p>“Hazards: none provided”</p>
-<p>Nothing presented to the user because there are no hazards; since 99.9% of EPUBs won’t have any hazards, there is no need to report “Hazards: No” for every EPUB.</p>
+<p><q>Hazards: none provided</q></p>
+<p>Nothing presented to the user because there are no hazards; since 99.9% of EPUBs won’t have any hazards, there is no need to report <q>Hazards: No</q> for every EPUB.</p>
 <h4 id="example-8.6-metadata-present-noflashinghazard-nosoundhazard-and-nosimulation">Example 8.6 (metadata present: <code>noFlashingHazard</code>, <code>noSoundHazard</code>, and <code>noSimulation</code>)</h4>
 <h5 id="metadata-26">Metadata</h5>
 <div class="sourceCode" id="cb28"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">&lt;meta</span><span class="ot"> property=</span><span class="st">&quot;schema:accessibilityHazard&quot;</span><span class="kw">&gt;</span>noFlashingHazard<span class="kw">&lt;/meta&gt;</span></a>
@@ -550,14 +551,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h5 id="ui-24">UI</h5>
 <p>Omit this section</p>
 <p><strong>Or</strong></p>
-<p>“Hazards: none”</p>
+<p><q>Hazards: none</q></p>
 <p><strong>Or</strong></p>
-<p>“Hazards: No Flashing, No Sound, No Motion Simulation”</p>
+<p><q>Hazards: No Flashing, No Sound, No Motion Simulation</q></p>
 <h4 id="example-8.7-metadata-not-present">Example 8.7 (metadata not present)</h4>
 <h5 id="metadata-27">Metadata</h5>
 <p>""</p>
 <h5 id="ui-25">UI</h5>
-<p>“Hazards: None provided”</p>
+<p><q>Hazards: None provided</q></p>
 <p>We want to make the distinction here between No Hazards and missing hazard metadata therefore for the missing metadata case we need to inform the user we don’t know about any hazards which may or maynot be present.</p>
 <hr />
 <h2 id="all-accessibility-metadata"><a name="all-accessibility-metadata)">All Accessibility Metadata</a></h2>
@@ -743,7 +744,7 @@ ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfo
 <a class="sourceLine" id="cb31-25" title="25">    <span class="kw">&lt;/Product&gt;</span></a>
 <a class="sourceLine" id="cb31-26" title="26"><span class="kw">&lt;/ONIXMessage&gt;</span></a></code></pre></div>
 <h3 id="inaccessible">Inaccessible</h3>
-<p>The ONIX standard, unlike the Schema.org standard, provides a method to indicate that a given title is inaccessible, which is described as “Known to lack significant features required for broad accessibility.” This is indicated by using <a href="https://ns.editeur.org/onix/en/196">List: 196</a>; Code 09 within a ProductFormFeatureValue element.</p>
+<p>The ONIX standard, unlike the Schema.org standard, provides a method to indicate that a given title is inaccessible, which is described as <q>Known to lack significant features required for broad accessibility.</q> This is indicated by using <a href="https://ns.editeur.org/onix/en/196">List: 196</a>; Code 09 within a ProductFormFeatureValue element.</p>
 <p><em>Vendors may omit all other accessibility metadata fields.</em></p>
 <h4 id="onix-example-10.1">ONIX Example 10.1</h4>
 <h5 id="metadata-30">Metadata</h5>
@@ -753,7 +754,7 @@ ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfo
 <a class="sourceLine" id="cb32-3" title="3">    <span class="kw">&lt;ProductFormFeatureValue&gt;</span>09<span class="kw">&lt;/ProductFormFeatureValue&gt;</span></a>
 <a class="sourceLine" id="cb32-4" title="4"><span class="kw">&lt;/ProductFormFeature&gt;</span></a></code></pre></div>
 <h5 id="ui-28">UI</h5>
-<p>“Inaccessible”</p>
+<p><q>Inaccessible</q></p>
 <h3 id="screen-reader-friendly-1">Screen Reader Friendly</h3>
 <p>Not available in ONIX</p>
 <h3 id="audio-book">Audio Book</h3>
@@ -764,7 +765,7 @@ ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfo
 <div class="sourceCode" id="cb33"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb33-1" title="1">//Product/DescriptiveDetail/PrimaryContentType[text()=&quot;01&quot;] or</a>
 <a class="sourceLine" id="cb33-2" title="2">//Product/DescriptiveDetail/ProductContentType[text()=&quot;01&quot;]</a></code></pre></div>
 <h5 id="ui-29">UI</h5>
-<p>“Audiobook: Yes”</p>
+<p><q>Audiobook: Yes</q></p>
 <h3 id="accessibility-summary-1">Accessibility Summary</h3>
 <p>This information can be retrieved from ONIX <a href="https://ns.editeur.org/onix/en/196">code list: 196</a>; Code: 00: Accessibility Summary.</p>
 <h4 id="onix-example-12.1">ONIX Example 12.1</h4>
@@ -786,7 +787,7 @@ ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfo
 <div class="sourceCode" id="cb35"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb35-1" title="1">//Product/DescriptiveDetail/ProductFormFeature[ProductFormFeatureType=&quot;09&quot;</a>
 <a class="sourceLine" id="cb35-2" title="2">and ProductFormFeatureValue=&quot;02&quot;]</a></code></pre></div>
 <h5 id="ui-31">UI</h5>
-<p>“Accessibility Conformance: WCAG-A”</p>
+<p><q>Accessibility Conformance: WCAG-A</q></p>
 <h4 id="onix-example-13.2">ONIX Example 13.2</h4>
 <h5 id="xpath-3">XPath</h5>
 <p>If the following XPath returns at least one result:</p>
@@ -812,7 +813,7 @@ ONIX does not have an exact 1:1 mapping with EPUB accessibility metadata so unfo
 <p><a href="http://www.example.com/a11y/report/9780000000001"><img src="./media/image2.png" alt="Report webpage" width="50"/></a></p>
 <blockquote>
 <p><em>(Clickable Image to the URI of the report from metadata)</em></p>
-<p><em>alt-text “Report webpage”</em></p>
+<p><em>alt-text <q>Report webpage</q></em></p>
 <p><em>(Image here of checkmark with clipboard is just for reference feel free to choose your own image)</em></p>
 </blockquote>
 <p><strong>Or</strong></p>
