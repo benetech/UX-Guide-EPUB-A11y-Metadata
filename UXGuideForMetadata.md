@@ -3,7 +3,7 @@ title: User Experience Guide for Displaying Accessibility metadata for EPUB
 ...
 
 ## Status of This Document
-Editors Draft - Version 0.9 (05/23/2019)
+Editors Draft - Version 0.9 (05/24/2019)
 
 This document was published by the DIAGRAM Center Standards Working Group and DAISY's Transition to EPUB Working group  as an Editor's Draft.
 
@@ -570,8 +570,7 @@ as long as you make the links available in the section [All
 Accessibility Metadata](#all-accessibility-metadata), described below.
 
 >**Note**: The above three URIs could change in the future since they point
-to an IDPF page; the IDPF no longer exists as an independent
-organization, and this work has been moved to the W3C. If a change
+to an IDPF page; this work has been moved to the W3C. If a change
 occurs, other URIs will be recommended.
 
 #### Example 4.1 (metadata present)
