@@ -610,7 +610,7 @@ EPUB Accessibility Conformance:
 
 ##### UI
 
-EPUB Accessibility Conformance: None provided
+"EPUB Accessibility Conformance: None provided"
 
 ### Certified By
 
@@ -635,7 +635,7 @@ OPF file:
 
 ##### UI
 
-Certified By: 3rd Party Company Name
+"Certified By: 3rd Party Company Name"
 
 #### Example 5.2 (metadata present self Certified)
 
@@ -648,7 +648,7 @@ Certified By: 3rd Party Company Name
 
 ##### UI
 
-Self Certified By: Publisher Name
+"Self Certified By: Publisher Name"
 
 #### Example 5.3 (metadata missing)
 
@@ -697,7 +697,7 @@ Accessible</meta>
 
 ##### UI
 
-Certifier Credential: XYZ Certified Accessible
+"Certifier Credential: XYZ Certified Accessible"
 
 #### Example 6.2 (Generic 3rd party URL)
 
@@ -1297,7 +1297,7 @@ and ProductFormFeatureValue="03"] returns at least one result
 
 ##### UI
 
-Accessibility Conformance: WCAG-AA
+"Accessibility Conformance: WCAG-AA"
 
 ### Certified By
 
