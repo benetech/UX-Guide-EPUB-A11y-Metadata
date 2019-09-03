@@ -1,6 +1,2 @@
-# UX-Guide-EPUB-A11y-Metadata
-User Experience Guide for Displaying Accessibility metadata for EPUB
-
-You can view this document live from this link: [UX Live View of webpage](https://benetech.github.io/UX-Guide-EPUB-A11y-Metadata/UXGuideForMetadata.html)
-
-The HTML version is generated using [Pandoc](https://www.pandoc.org/) from the Markdown source file. A makefile is provided to automate the conversion. It requires GNU Make and Pandoc to be installed. All changes should be made to the Markdown file; the HTML should not be edited directly.
+# NOTICE
+This work has moved into the W3C's EPUB 3 Community Group and can be found at this [Github repository](https://github.com/w3c/publ-a11y/tree/master/UX-Guide-Metadata), here is a rendered view of the latest draft of this work [UX Guide for displaying accessibility metadata Principles](https://w3c.github.io/publ-a11y/UX-Guide-Metadata/principles/) and [UX Guide for displaying accessibility metadata Techniques](https://w3c.github.io/publ-a11y/UX-Guide-Metadata/techniques/).
