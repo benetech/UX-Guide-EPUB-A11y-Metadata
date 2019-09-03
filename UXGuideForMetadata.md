@@ -2,8 +2,16 @@
 title: User Experience Guide for Displaying Accessibility metadata for EPUB
 ...
 
+# NOTICE
+This work has moved into the W3C's EPUB 3 Community Group and can be found at this [Github repository](https://github.com/w3c/publ-a11y/tree/master/UX-Guide-Metadata), here is a rendered view of the latest draft of this work [UX Guide for displaying accessibility metadata Principles](https://w3c.github.io/publ-a11y/UX-Guide-Metadata/principles/) and [UX Guide for displaying accessibility metadata Techniques](https://w3c.github.io/publ-a11y/UX-Guide-Metadata/techniques/).
+
+Any future work should be done via the W3C's EPUB3 Community Groups Github repositories.
+
 ## Status of This Document
-Editors Draft - Version 0.9 (05/24/2019)
+OBSOLETE as has been moved to the W3C
+
+### Previous version
+Editors Draft - Version 0.9 (05/24/2019) 
 
 This document was published by the DIAGRAM Center Standards Working Group and DAISY's Transition to EPUB Working group  as an Editor's Draft.
 
