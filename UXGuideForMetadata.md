@@ -8,10 +8,11 @@ This work has moved into the W3C's EPUB 3 Community Group and can be found at th
 Any future work should be done via the W3C's EPUB3 Community Groups Github repositories.
 
 ## Status of This Document
-OBSOLETE as has been moved to the W3C
+OBSOLETE as has been moved to the W3C, (Until which time as the W3C's documents are published this is the most up-to-date and inclusive reference document and is still valid.)
 
-### Previous version
-Editors Draft - Version 0.9 (05/24/2019) 
+### Version
+Editors Draft - Version 0.9 (05/24/2019)
+Editors Draft - Version 0.9.1 (10/08/2019) - Fixed Example for Screen Reader Friendly
 
 This document was published by the DIAGRAM Center Standards Working Group and DAISY's Transition to EPUB Working group  as an Editor's Draft.
 
@@ -241,7 +242,7 @@ When there is no `accessModeSufficient` metadata present, report
 ##### Metadata
 
 ```xml
-<meta property="schema:accessModeSufficient">visual</meta>
+<meta property="schema:accessModeSufficient">textual</meta>
 ```
 
 ##### UI
